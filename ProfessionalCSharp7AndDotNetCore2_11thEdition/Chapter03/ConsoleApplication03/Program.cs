@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace ConsoleApplication03
 {
@@ -19,6 +20,18 @@ namespace ConsoleApplication03
             test3_3_6();
             Console.WriteLine("--------------");
             test3_4_1();
+            Console.WriteLine("--------------");
+            test3_5_1();
+            Console.WriteLine("--------------");
+            test3_5_2();
+            Console.WriteLine("--------------");
+            test3_5_3();
+            Console.WriteLine("--------------");
+            test3_6();
+            Console.WriteLine("--------------");
+            test3_7();
+            Console.WriteLine("--------------");
+            test3_9();
         }
 
         /// <summary>
@@ -133,6 +146,190 @@ namespace ConsoleApplication03
             // Dimensions point2;
             // point2.Length = 3;
             // point2.Width = 6;
+        }
+
+        /// <summary>
+        /// 3.5 按值和按引用传递参数
+        /// 3.5.1 ref 参数
+        /// </summary>
+        private static void test3_5_1()
+        {
+            // 结构按值传递，a1 的内容从不改变，一直是 1
+            AStruct a1 = new AStruct {X = 1};
+            changeA(a1);
+            Console.WriteLine($"a1.X: {a1.X}");
+            // 类按引用传递。这里结果是 2
+            AClass a2 = new AClass {X = 1};
+            changeA(a2);
+            Console.WriteLine($"a2.X: {a2.X}");
+            // 也可以通过引用传递结构。如果 A 是结构类型，就添加 ref 修饰符，修改 ChangeA 方法的声明，通过引用传递变量
+            // 从调用端也可以看出这一点，所以给方法参数应用了 ref 修饰符后，在调用方法时需要添加它
+            AStruct a1ref = new AStruct {X = 1};
+            changeA(ref a1ref);
+            Console.WriteLine($"a1ref.X: {a1ref.X}");
+            // 把 A 作为类类型，使用 ref 修饰符，传递对引用的引用（在 C++ 术语中，是一个指向指针的指针），
+            // 它允许分配一个新对象，显示结果 3
+            AClass a2ref = new AClass {X = 1};
+            changeA(ref a2ref);
+            Console.WriteLine($"a2ref.X: {a2ref.X}");
+        }
+
+        public static void changeA(AStruct a)
+        {
+            a.X = 2;
+        }
+
+        public static void changeA(ref AStruct a)
+        {
+            a.X = 2;
+        }
+
+        public static void changeA(AClass a)
+        {
+            a.X = 2;
+            a = new AClass {X = 3};
+        }
+
+        public static void changeA(ref AClass a)
+        {
+            a.X = 2;
+            a = new AClass {X = 3};
+        }
+
+        public struct AStruct
+        {
+            public int X { get; set; }
+        }
+
+        public class AClass
+        {
+            public int X { get; set; }
+        }
+
+        /// <summary>
+        /// 3.5.2 out 参数
+        /// </summary>
+        private static void test3_5_2()
+        {
+            // String input1 = Console.ReadLine();
+            // int result1 = int.Parse(input1);
+            // Console.WriteLine($"result: {result1}");
+            // out var 是 C# 7 的一个新特性。在 C# 7 之前，需要在调用该方法之前声明一个 out 变量。
+            // 在 C# 7 中，可以调用方法来实现声明。如果类型是由方法签名明确定义的，则可以使用 var 关键字来声明变量
+            String input2 = Console.ReadLine();
+            if (int.TryParse(input2, out int result2))
+            {
+                Console.WriteLine($"result: {result2}");
+            }
+            else
+            {
+                Console.WriteLine("not a number");
+            }
+        }
+
+        /// <summary>
+        /// 3.5.3 in 参数
+        /// </summary>
+        private static void test3_5_3()
+        {
+            CanChange(new AValueType {Data = 42});
+        }
+
+        struct AValueType
+        {
+            public int Data;
+        }
+
+        static void CanChange(in AValueType a)
+        {
+            // a.Data = 43; // 不能编译 - 只读变量
+            Console.WriteLine(a.Data);
+        }
+
+        /// <summary>
+        /// 3.6 可空类型
+        /// </summary>
+        private static void test3_6()
+        {
+            // x1 是一个普通的 int，x2 是一个可以为空的 int
+            int x1 = 1;
+            int? x2 = null;
+            // int 值可以分配给 int?
+            int? x3 = x1;
+            // 反过来是不正确的。int? 不能直接分配给 int。这可能失败，因此需要一个类型转换
+            int x4 = (int) x3;
+            Console.WriteLine(x4);
+            // 当然，如果 x3 是 null，类型转换操作就会生成一个异常。更好的方法是使用可空类型的 HasValue 和 Value 属性。
+            int x5 = x3.HasValue ? x3.Value : -1;
+            Console.WriteLine(x5);
+            // 使用合并操作符??，可空类型可以使用较短的语法。如果 x3 是 null，则用变量 x6 给它设置 -1，否则提取 x3 的值
+            int x6 = x3 ?? -1;
+            Console.WriteLine(x6);
+        }
+
+        /// <summary>
+        /// 3.7 枚举类型
+        /// </summary>
+        private static void test3_7()
+        {
+            Color c1 = Color.Red;
+            Console.WriteLine(c1);
+            Color c2 = (Color) 2;
+            Console.WriteLine(c2);
+            short number = (short) c2;
+            Console.WriteLine(number);
+            DaysOfWeek mondayAndWednesday = DaysOfWeek.Monday | DaysOfWeek.Wednesday;
+            Console.WriteLine(mondayAndWednesday);
+            DaysOfWeek weekend = DaysOfWeek.Saturday | DaysOfWeek.Sunday;
+            Console.WriteLine(weekend);
+            if (Enum.TryParse<Color>("Red", out var red))
+            {
+                Console.WriteLine($"successfully parsed {red}");
+            }
+
+            foreach (var day in Enum.GetNames(typeof(Color)))
+            {
+                Console.WriteLine(day);
+            }
+
+            foreach (short value in Enum.GetValues(typeof(Color)))
+            {
+                Console.WriteLine(value);
+            }
+        }
+
+        public enum Color : short
+        {
+            Red = 1,
+            Green = 2,
+            Blue = 3
+        }
+
+        // 要设置不同的位，可以使用用 0x 前缀指定的十六进制值轻松完成，Flags 属性是编译器创建值的另一个字符串表示的信息。
+        // 例如给 DaysOfWeek 的一个变量设置值 3，结果是 Monday，如果使用 Flags 属性，结果就是 Tuesday
+        [Flags]
+        public enum DaysOfWeek
+        {
+            Monday = 0x1,
+            Tuesday = 0x2,
+            Wednesday = 0x4,
+            Thursday = 0x8,
+            Friday = 0x10,
+            Saturday = 0x20,
+            Sunday = 0x40,
+            Weekend = Saturday | Sunday,
+            Workday = 0x1f,
+            AllWeek = Workday | Weekend
+        }
+
+        /// <summary>
+        /// 3.9 扩展方法
+        /// </summary>
+        private static void test3_9()
+        {
+            string fox = "the quick brown fox jumped over the lazy dogs down 9876543210 times";
+            int wordCount = fox.GetWordCount();
+            Console.WriteLine($"{wordCount} words");
         }
     }
 
@@ -386,5 +583,13 @@ namespace ConsoleApplication03
         }
 
         public double Diagonal => System.Math.Sqrt(Length * Length + Width * Width);
+    }
+
+    /// <summary>
+    /// 3.9 扩展方法
+    /// </summary>
+    public static class StringExtension
+    {
+        public static int GetWordCount(this string s) => s.Split().Length;
     }
 }
