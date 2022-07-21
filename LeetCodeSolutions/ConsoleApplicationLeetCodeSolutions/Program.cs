@@ -1,4 +1,5 @@
 ﻿using ConsoleApplicationLeetCodeSolutions.from1to200;
+using ConsoleApplicationLeetCodeSolutions.lcp;
 
 namespace ConsoleApplicationLeetCodeSolutions
 {
@@ -7,7 +8,8 @@ namespace ConsoleApplicationLeetCodeSolutions
         public static void Main(string[] args)
         {
             // new Solution4().Test();
-            new Solution5().Test();
+            // new Solution5().Test();
+            new SolutionLcp10().Test();
         }
     }
 }

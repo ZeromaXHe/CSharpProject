@@ -43,6 +43,13 @@
         <Compile Include="from1to200\Solution3.cs" />
         <Compile Include="from1to200\Solution4.cs" />
         <Compile Include="from1to200\Solution5.cs" />
+        <Compile Include="lcp\SolutionLcp06.cs" />
+        <Compile Include="lcp\SolutionLcp07.cs" />
+        <Compile Include="lcp\SolutionLcp08.cs" />
+        <Compile Include="lcp\SolutionLcp09.cs" />
+        <Compile Include="lcp\SolutionLcp10.cs" />
+        <Compile Include="lcp\SolutionLcp11.cs" />
+        <Compile Include="lcp\SolutionLcp12.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
