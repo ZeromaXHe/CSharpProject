@@ -43,6 +43,10 @@
         <Compile Include="from1to200\Solution3.cs" />
         <Compile Include="from1to200\Solution4.cs" />
         <Compile Include="from1to200\Solution5.cs" />
+        <Compile Include="from2201to2400\Solution2328.cs" />
+        <Compile Include="from2201to2400\Solution2334.cs" />
+        <Compile Include="from2201to2400\Solution2338.cs" />
+        <Compile Include="from2201to2400\Solution2344.cs" />
         <Compile Include="lcp\SolutionLcp06.cs" />
         <Compile Include="lcp\SolutionLcp07.cs" />
         <Compile Include="lcp\SolutionLcp08.cs" />

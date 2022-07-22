@@ -1,4 +1,6 @@
-﻿using ConsoleApplicationLeetCodeSolutions.from1to200;
+﻿using System;
+using ConsoleApplicationLeetCodeSolutions.from1to200;
+using ConsoleApplicationLeetCodeSolutions.from2201to2400;
 using ConsoleApplicationLeetCodeSolutions.lcp;
 
 namespace ConsoleApplicationLeetCodeSolutions
@@ -7,9 +9,18 @@ namespace ConsoleApplicationLeetCodeSolutions
     {
         public static void Main(string[] args)
         {
-            // new Solution4().Test();
-            // new Solution5().Test();
-            new SolutionLcp10().Test();
+            try
+            {
+                // new Solution4().Test();
+                // new Solution5().Test();
+                // new SolutionLcp10().Test();
+                new Solution2328().Test();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }
