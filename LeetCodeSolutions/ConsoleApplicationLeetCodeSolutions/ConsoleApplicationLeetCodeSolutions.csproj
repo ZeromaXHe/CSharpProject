@@ -40,9 +40,12 @@
     <ItemGroup>
         <Compile Include="from1to200\Solution1.cs" />
         <Compile Include="from1to200\Solution2.cs" />
+        <Compile Include="from1to200\Solution25.cs" />
         <Compile Include="from1to200\Solution3.cs" />
         <Compile Include="from1to200\Solution4.cs" />
         <Compile Include="from1to200\Solution5.cs" />
+        <Compile Include="from1to200\Solution70.cs" />
+        <Compile Include="from1to200\Solution75.cs" />
         <Compile Include="from2201to2400\Solution2328.cs" />
         <Compile Include="from2201to2400\Solution2334.cs" />
         <Compile Include="from2201to2400\Solution2338.cs" />
@@ -54,6 +57,7 @@
         <Compile Include="lcp\SolutionLcp10.cs" />
         <Compile Include="lcp\SolutionLcp11.cs" />
         <Compile Include="lcp\SolutionLcp12.cs" />
+        <Compile Include="offer\SolutionOffer24.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
