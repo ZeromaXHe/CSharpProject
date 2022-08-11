@@ -39,6 +39,8 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="from1to200\Solution1.cs" />
+        <Compile Include="from1to200\Solution15.cs" />
+        <Compile Include="from1to200\Solution198.cs" />
         <Compile Include="from1to200\Solution2.cs" />
         <Compile Include="from1to200\Solution25.cs" />
         <Compile Include="from1to200\Solution3.cs" />
@@ -46,10 +48,12 @@
         <Compile Include="from1to200\Solution5.cs" />
         <Compile Include="from1to200\Solution70.cs" />
         <Compile Include="from1to200\Solution75.cs" />
+        <Compile Include="from201to400\Solution213.cs" />
         <Compile Include="from2201to2400\Solution2328.cs" />
         <Compile Include="from2201to2400\Solution2334.cs" />
         <Compile Include="from2201to2400\Solution2338.cs" />
         <Compile Include="from2201to2400\Solution2344.cs" />
+        <Compile Include="from601to800\Solution740.cs" />
         <Compile Include="lcp\SolutionLcp06.cs" />
         <Compile Include="lcp\SolutionLcp07.cs" />
         <Compile Include="lcp\SolutionLcp08.cs" />
