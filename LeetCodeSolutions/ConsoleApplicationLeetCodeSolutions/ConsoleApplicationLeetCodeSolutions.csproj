@@ -56,6 +56,7 @@
         <Compile Include="from2001to2200\Solution2105.cs" />
         <Compile Include="from201to400\Solution206.cs" />
         <Compile Include="from201to400\Solution213.cs" />
+        <Compile Include="from201to400\Solution240.cs" />
         <Compile Include="from201to400\Solution322.cs" />
         <Compile Include="from2201to2400\Solution2328.cs" />
         <Compile Include="from2201to2400\Solution2334.cs" />
