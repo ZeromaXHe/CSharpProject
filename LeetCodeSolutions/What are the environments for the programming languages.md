@@ -1,0 +1,33 @@
+# What are the environments for the programming languages?
+
+- 2022/8/2 Updated
+
+[Follow](https://support.leetcode.com/hc/en-us/articles/360011833974-What-are-the-environments-for-the-programming-languages-/subscription.html)
+
+| Language      | Version                                                      | Notes                                                        |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| C++           | Compiled with `clang 11 `using the latest C++ 17 standard.   | Your code is compiled with level two optimization (`-O2`). [AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer) is also enabled to help detect out-of-bounds and use-after-free bugs.Most standard library headers are already included automatically for your convenience. |
+| Java          | java 13.0.1                                                  | `OpenJDK 17 `. Java 8 features such as lambda expressions and stream API can be used.Most standard library headers are already included automatically for your convenience.Includes `Pair` class from https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html. |
+| Python        | python 2.7.12                                                | Most libraries are already imported automatically for your convenience, such as [array](https://docs.python.org/2/library/array.html), [bisect](https://docs.python.org/2/library/bisect.html), [collections](https://docs.python.org/2/library/collections.html). If you need more libraries, you can import it yourself.For Map/TreeMap data structure, you may use [sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/) library.Note that Python 2.7 [will not be maintained past 2020](https://www.python.org/dev/peps/pep-0373/). For the latest Python, please choose Python3 instead. |
+| Python3       | Python 3.10                                                  | Most libraries are already imported automatically for your convenience, such as [array](https://docs.python.org/3/library/array.html), [bisect](https://docs.python.org/3/library/bisect.html), [collections](https://docs.python.org/3/library/collections.html). If you need more libraries, you can import it yourself.For Map/TreeMap data structure, you may use [sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/) library. |
+| MySQL         | MySQL 8.0                                                    |                                                              |
+| MS SQL Server | mssql server 2019                                            |                                                              |
+| Oracle        | Oracle SQL 11.2                                              |                                                              |
+| C             | gcc 8.2                                                      | Compiled with `gcc 8.2` using the gnu11 standard.Your code is compiled with level one optimization (`-O1`). [AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer) is also enabled to help detect out-of-bounds and use-after-free bugs.Most standard library headers are already included automatically for your convenience.For hash table operations, you may use [uthash](https://troydhanson.github.io/uthash/). "uthash.h" is included by default. Below are some examples:**1. Adding an item to a hash.**`struct hash_entry {    int id;            /* we'll use this field as the key */    char name[10];    UT_hash_handle hh; /* makes this structure hashable */ }; struct hash_entry *users = NULL; void add_user(struct hash_entry *s) {    HASH_ADD_INT(users, id, s); } ` **2. Looking up an item in a hash:**`struct hash_entry *find_user(int user_id) {    struct hash_entry *s;    HASH_FIND_INT(users, &user_id, s);    return s; } ` **3. Deleting an item in a hash:**`void delete_user(struct hash_entry *user) {    HASH_DEL(users, user);   }` |
+| C#            | [C# 10 with .NET 6 runtime](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9) |                                                              |
+| JavaScript    | node.js 16.13.2                                              | Your code is run with `--harmony` flag, enabling [new ES6 features](http://node.green/).[lodash.js](https://lodash.com/) library is included by default.For Priority Queue / Queue data structures, you may use version 4.1 datastructures-js/priority-queue and datastructures-js/queue. |
+| Ruby          | ruby 3.1                                                     | Some common data structure implementations are provided in the Algorithms module: https://www.rubydoc.info/github/kanwei/algorithms/Algorithms |
+| Bash          | bash 4.3.30                                                  |                                                              |
+| Swift         | swift 5.5.2                                                  |                                                              |
+| Go            | go 1.17.6                                                    | Support https://godoc.org/github.com/emirpasic/gods library. |
+| Scala         | Scala 2.13.7                                                 |                                                              |
+| Kotlin        | Kotlin 1.3.10                                                |                                                              |
+| Rust          | 1.58.2                                                       | Supports [rand ](https://crates.io/crates/rand)v0.6 from crates.io |
+| PHP           | PHP 8.1                                                      | With bcmath module                                           |
+| Typescript    | TypeScript 4.5.4, Node.js 16.13.2                            | Your code is run with `--harmony` flag, enabling [new ES2020 features](http://node.green/).[lodash.js](https://lodash.com/) library is included by default. |
+| Racket        | Racket 8.3                                                   |                                                              |
+| Erlang        | Erlang/OTP 24.2                                              |                                                              |
+| Elixir        | Elixir 1.13.0 with Erlang/OTP 24.2                           |                                                              |
+| Dart          | Dart 2.17.3                                                  | Your code will be run directly without compiling             |
+
+ 

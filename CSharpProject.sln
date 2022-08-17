@@ -65,6 +65,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication06_Operators", "ProfessionalCSharp7AndDotNetCore2_11thEdition\Chapter06\ConsoleApplication06_Operators\ConsoleApplication06_Operators.csproj", "{C0A072BD-F173-4E89-B26B-5B23B36DC48C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeetCodeSolutions", "LeetCodeSolutions", "{458C8C6C-C56B-4A82-858F-6EE26E4C818E}"
+ProjectSection(SolutionItems) = preProject
+	LeetCodeSolutions\What are the environments for the programming languages.md = LeetCodeSolutions\What are the environments for the programming languages.md
+EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationLeetCodeSolutions", "LeetCodeSolutions\ConsoleApplicationLeetCodeSolutions\ConsoleApplicationLeetCodeSolutions.csproj", "{EDCBF8A0-515A-4CC1-BB2A-28F1BA04B264}"
 EndProject
