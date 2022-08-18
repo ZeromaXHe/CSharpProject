@@ -19,7 +19,8 @@ namespace ConsoleApplicationLeetCodeSolutions
                 // new Solution2328().Test();
                 // new Solution322().Test();
                 // new Solution23().Test();
-                new Solution540().Test();
+                // new Solution540().Test();
+                new Solution222().Test();
             }
             catch (Exception e)
             {
