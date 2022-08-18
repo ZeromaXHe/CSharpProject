@@ -38,8 +38,10 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="from1001to1200\Solution1129.cs" />
         <Compile Include="from1201to1400\Solution1224.cs" />
         <Compile Include="from1201to1400\Solution1376.cs" />
+        <Compile Include="from1401to1600\Solution1466.cs" />
         <Compile Include="from1601to1800\Solution1630.cs" />
         <Compile Include="from1801to2000\Solution1838.cs" />
         <Compile Include="from1to200\Solution1.cs" />
@@ -76,6 +78,7 @@
         <Compile Include="from2201to2400\Solution2338.cs" />
         <Compile Include="from2201to2400\Solution2344.cs" />
         <Compile Include="from401to600\Solution429.cs" />
+        <Compile Include="from401to600\Solution503.cs" />
         <Compile Include="from401to600\Solution540.cs" />
         <Compile Include="from601to800\Solution740.cs" />
         <Compile Include="from801to1000\Solution802.cs" />
