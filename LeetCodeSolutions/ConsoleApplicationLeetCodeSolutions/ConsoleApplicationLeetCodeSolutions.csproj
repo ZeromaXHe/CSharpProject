@@ -38,6 +38,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="from1201to1400\Solution1224.cs" />
         <Compile Include="from1201to1400\Solution1376.cs" />
         <Compile Include="from1601to1800\Solution1630.cs" />
         <Compile Include="from1801to2000\Solution1838.cs" />
