@@ -104,6 +104,7 @@
         <Compile Include="from401to600\Solution503.cs" />
         <Compile Include="from401to600\Solution540.cs" />
         <Compile Include="from401to600\Solution556.cs" />
+        <Compile Include="from601to800\Solution654.cs" />
         <Compile Include="from601to800\Solution707.cs" />
         <Compile Include="from601to800\Solution713.cs" />
         <Compile Include="from601to800\Solution740.cs" />
