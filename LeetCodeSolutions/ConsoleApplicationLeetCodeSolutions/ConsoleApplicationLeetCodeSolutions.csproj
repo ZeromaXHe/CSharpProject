@@ -133,6 +133,7 @@
         <Compile Include="from601to800\Solution729.cs" />
         <Compile Include="from601to800\Solution740.cs" />
         <Compile Include="from601to800\Solution752.cs" />
+        <Compile Include="from601to800\Solution782.cs" />
         <Compile Include="from601to800\Solution785.cs" />
         <Compile Include="from801to1000\Solution802.cs" />
         <Compile Include="from801to1000\Solution826.cs" />
