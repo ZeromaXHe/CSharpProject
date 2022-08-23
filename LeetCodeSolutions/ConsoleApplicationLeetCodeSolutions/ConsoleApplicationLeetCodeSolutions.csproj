@@ -56,6 +56,8 @@
         <Compile Include="from1801to2000\Solution1838.cs" />
         <Compile Include="from1801to2000\Solution1845.cs" />
         <Compile Include="from1to200\Solution1.cs" />
+        <Compile Include="from1to200\Solution103.cs" />
+        <Compile Include="from1to200\Solution105.cs" />
         <Compile Include="from1to200\Solution11.cs" />
         <Compile Include="from1to200\Solution118.cs" />
         <Compile Include="from1to200\Solution119.cs" />
@@ -89,6 +91,7 @@
         <Compile Include="from1to200\Solution5.cs" />
         <Compile Include="from1to200\Solution55.cs" />
         <Compile Include="from1to200\Solution62.cs" />
+        <Compile Include="from1to200\Solution63.cs" />
         <Compile Include="from1to200\Solution70.cs" />
         <Compile Include="from1to200\Solution75.cs" />
         <Compile Include="from1to200\Solution78.cs" />
@@ -107,6 +110,7 @@
         <Compile Include="from201to400\Solution240.cs" />
         <Compile Include="from201to400\Solution264.cs" />
         <Compile Include="from201to400\Solution268.cs" />
+        <Compile Include="from201to400\Solution279.cs" />
         <Compile Include="from201to400\Solution304.cs" />
         <Compile Include="from201to400\Solution322.cs" />
         <Compile Include="from201to400\Solution341.cs" />
