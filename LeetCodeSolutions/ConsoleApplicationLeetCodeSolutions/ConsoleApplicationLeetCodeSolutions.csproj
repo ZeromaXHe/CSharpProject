@@ -44,6 +44,7 @@
         <Compile Include="from1201to1400\Solution1306.cs" />
         <Compile Include="from1201to1400\Solution1376.cs" />
         <Compile Include="from1401to1600\Solution1450.cs" />
+        <Compile Include="from1401to1600\Solution1460.cs" />
         <Compile Include="from1401to1600\Solution1466.cs" />
         <Compile Include="from1401to1600\Solution1557.cs" />
         <Compile Include="from1401to1600\Solution1574.cs" />
