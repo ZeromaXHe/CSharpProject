@@ -1,6 +1,7 @@
 ﻿using System;
 using ConsoleApplicationLeetCodeSolutions.from1201to1400;
 using ConsoleApplicationLeetCodeSolutions.from1601to1800;
+using ConsoleApplicationLeetCodeSolutions.from1801to2000;
 using ConsoleApplicationLeetCodeSolutions.from1to200;
 using ConsoleApplicationLeetCodeSolutions.from201to400;
 using ConsoleApplicationLeetCodeSolutions.from2201to2400;
@@ -30,7 +31,8 @@ namespace ConsoleApplicationLeetCodeSolutions
                 // new Solution63().Test();
                 // new Solution450().Test();
                 // new Solution673().Test();
-                new Solution583().Test();
+                // new Solution583().Test();
+                new Solution1802().Test();
             }
             catch (Exception e)
             {
