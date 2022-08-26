@@ -41,6 +41,7 @@
         <Compile Include="from1001to1200\Solution1129.cs" />
         <Compile Include="from1001to1200\Solution1143.cs" />
         <Compile Include="from1001to1200\Solution1314.cs" />
+        <Compile Include="from1201to1400\Solution1201.cs" />
         <Compile Include="from1201to1400\Solution1224.cs" />
         <Compile Include="from1201to1400\Solution1300.cs" />
         <Compile Include="from1201to1400\Solution1306.cs" />
@@ -120,13 +121,16 @@
         <Compile Include="from201to400\Solution202.cs" />
         <Compile Include="from201to400\Solution206.cs" />
         <Compile Include="from201to400\Solution213.cs" />
+        <Compile Include="from201to400\Solution215.cs" />
         <Compile Include="from201to400\Solution221.cs" />
         <Compile Include="from201to400\Solution222.cs" />
         <Compile Include="from201to400\Solution230.cs" />
+        <Compile Include="from201to400\Solution236.cs" />
         <Compile Include="from201to400\Solution240.cs" />
         <Compile Include="from201to400\Solution264.cs" />
         <Compile Include="from201to400\Solution268.cs" />
         <Compile Include="from201to400\Solution279.cs" />
+        <Compile Include="from201to400\Solution297.cs" />
         <Compile Include="from201to400\Solution300.cs" />
         <Compile Include="from201to400\Solution304.cs" />
         <Compile Include="from201to400\Solution322.cs" />
@@ -168,6 +172,7 @@
         <Compile Include="from601to800\Solution785.cs" />
         <Compile Include="from801to1000\Solution802.cs" />
         <Compile Include="from801to1000\Solution826.cs" />
+        <Compile Include="from801to1000\Solution841.cs" />
         <Compile Include="from801to1000\Solution847.cs" />
         <Compile Include="from801to1000\Solution860.cs" />
         <Compile Include="from801to1000\Solution886.cs" />
